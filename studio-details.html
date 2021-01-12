@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Gbox</title>
+    <link rel="icon" href="./img/gbox.ico">
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css">
+    <link rel="stylesheet" href="dest/fonts.css">
+    <link rel="stylesheet" href="dest/stylelibs.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="container">
+                <a class="logo" href="index.html"><img src="./img/gbox.svg" alt="gbox" class="svg ">
+                    <h1>Gbox</h1>
+                </a>
+
+                <a class="fb" href="http://fb.com/kai3089">
+                    <img src="./img/fb-ic.svg" alt="facebook" class="svg">
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="menu">
+                <li class="menu__item"><a href="about.html">About</a></li>
+                <ul class="menu__item sub-menu">
+                    <li class="menu__item"><a href="studio.html">Studio</a></li>
+                    <li class="menu__item"><a href="rental.html">Rental</a></li>
+                    <li class="menu__item"><a href="cafe.html">Cafe</a></li>
+                    <li class="menu__item"><a href="work.html">Work</a></li>
+                </ul>
+                <li class="menu__item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <button class="btn-menu"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+            aria-label="Main Menu">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path class="line line1"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+    </header>
+    <main class="studio-details">
+        <div class="container">
+            <div class="back-to-all">
+                <a href="">
+                    <span>Back to all</span>
+                    <img src="/img/down-narrow.svg" alt="" class="svg">
+                </a>
+            </div>
+        </div>
+        <section class="carousel-studio">
+            <div class="container line">
+                <div class="carousel">
+                    <img src="img/carousel-st-1.jpg" alt="">
+                    <img src="img/carousel-st-2.jpg" alt="">
+                    <img src="img/carousel-st-3.jpg" alt="">
+                </div>
+                <div class="carousel-studio__info">
+                    <div class="number-studio">
+                        <h5>Studio</h5>
+                        <h3>01</h3>
+                    </div>
+                    <div class="controller">
+                        <div class="content">
+                            <h5>Dimentions</h5>
+                            <h6>18mW x 18 mL x 7mH</h6>
+                        </div>
+                        <a href="" class="controller__download">
+                            <span>Download FloorPlan</span>
+                            <img src="img/floorplan.svg" alt="" class="svg">
+                        </a>
+                        <a href="" class="controller__fullscreen">
+                            <span>Full Screen</span>
+                            <img src="/img/full-screen.svg" alt="" class="svg">
+                        </a>
+                        <div class="controller__prevNext">
+                            <a href="" class="--prev-btn">
+                                <img src="/img/down-narrow-2.svg" alt="" class="svg">
+                                <span>Previous</span>
+                            </a>
+                            <a href="" class="--next-btn">
+                                <span>Next</span>
+                                <img src="/img/down-narrow-2.svg" alt="" class="svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="details">
+            <div class="container line">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article>
+                            <div class="details__pricing">
+                                <h2>Pricing</h2>
+                                <p>
+                                    <strong>Please note:</strong>
+                                    We operate on a 10 hour working day from 8am to 6pm.
+                                    Overtime is charged outside these times at the above rates.
+                                </p>
+                            </div>
+                            <table class="pricing-table">
+                                <tr>
+                                    <td align="left">Shoot</td>
+                                    <td align="right">10.000.000 vnd</td>
+                                </tr>
+                                <tr>
+                                    <td align="left">Build</td>
+                                    <td align="right">5.000.000 vnd</td>
+                                </tr>
+                                <tr>
+                                    <td align="left">Remove</td>
+                                    <td align="right">2.500.000 vnd</td>
+                                </tr>
+                                <tr>
+                                    <td align="left">Floating Celling</td>
+                                    <td align="right">3.500.000 vnd</td>
+                                </tr>
+                            </table>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="details__floorplan">
+                            <h2>Floorplan</h2>
+                            <div class="img">
+                                <img src="/img/floorplan.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 spec">
+                        <h2>Spec:</h2>
+                        <div class="row">
+                            <p class="col-md-6">Dimensions <span>18mW × 18mL × 7mH </span></p>
+                            <p class="col-md-6">U shaped infinity cove ( Green colour )</p>
+                            <p class="col-md-6">Drive in access</p>
+                            <p class="col-md-6">Remote controlled floating ceiling ( 6mWx12mL)</p>
+                            <p class="col-md-6">New client area ( Yellow colour )</p>
+                            <p class="col-md-6">Air conditioned in production office</p>
+                            <p class="col-md-6 offset-md-6">Power: 3 × 400A</p>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="book-now">
+                    <img src="/img/down-narrow-2.svg" alt="" class="svg">
+                    <a href="">
+                        <span>Book</span>
+                        <span>now</span>
+                    </a>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 info">
+                    <div class="email">
+                        <p>Email</p>
+                        <p>Info@Goldenboxstudios.com</p>
+                    </div>
+                    <div class="tel">
+                        <p>Tel</p>
+                        <p>+84 979 872 809</p>
+                    </div>
+                    <div class="address">
+                        <p>Address</p>
+                        <p>04 Bau Cat District Tan Binh Ho Chi Minh City.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 contact">
+                    <h6>If you have any questions, comments or</h6>
+                    <h6>suggestions, feel free to email us or</h6>
+                    <form action="" method="" id="contact-form" class="row">
+                        <div class="col-6">
+                            <div>
+                                <label for="">Your Name</label>
+                                <input type="text" name="" id="name">
+                            </div>
+                            <div>
+                                <label for="">Phone</label>
+                                <input type="number" name="" id="phone">
+                            </div>
+                            <div>
+                                <label for="">Email</label>
+                                <input type="email" name="" id="email">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <label for="">Subject</label>
+                                <input type="text" name="" id="subject">
+                            </div>
+                            <div>
+                                <label for="">Message</label>
+                                <textarea rows="2"></textarea>
+                            </div>
+                            <div class="submit">
+                                <button type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer_inf">
+                <div class="btn-top">
+                    <img src="img/up-narrow.svg" alt="" class="svg">
+                </div>
+                <p>&copy; 2018 Gbox Studio, All rights Reserved </p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

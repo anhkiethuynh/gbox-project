@@ -5,3 +5,4 @@ gruntfile.js
 package-lock.json
 package.json
 dest/style.min.css.map
+debug.log

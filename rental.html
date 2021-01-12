@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Gbox</title>
+    <link rel="icon" href="./img/gbox.ico">
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css">
+    <link rel="stylesheet" href="dest/fonts.css">
+    <link rel="stylesheet" href="dest/stylelibs.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="container">
+                <a class="logo" href="index.html"><img src="./img/gbox.svg" alt="gbox" class="svg ">
+                    <h1>Gbox</h1>
+                </a>
+
+                <a class="fb" href="http://fb.com/kai3089">
+                    <img src="./img/fb-ic.svg" alt="facebook" class="svg">
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="menu">
+                <li class="menu__item"><a href="about.html">About</a></li>
+                <ul class="menu__item sub-menu">
+                    <li class="menu__item"><a href="studio.html">Studio</a></li>
+                    <li class="menu__item"><a href="rental.html">Rental</a></li>
+                    <li class="menu__item"><a href="cafe.html">Cafe</a></li>
+                    <li class="menu__item"><a href="work.html">Work</a></li>
+                </ul>
+                <li class="menu__item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <button class="btn-menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+    </header>
+    <main class="rental-studio">
+        <div class="container line">
+            <div class="row">    
+                <div class="col-md-4">
+                   <div class="side-bar">
+                        <div class="number-studio">
+                            <h5>Studio</h5>
+                            <h3>01</h3>
+                        </div>  
+                        <div>
+                            <h4>Rental</h4>
+                            <h6>Dimentions</h6>
+                            <p>87ft x 92ft x 31ft</p>
+                            <p>(26.52m x 28.04m x 9.45m)</p>
+                        </div>
+                   </div>
+                </div>
+                <div class="col-md-8">
+                    <form action="">
+                        <div class="company-details">
+                          
+                            <div class="row">  
+                                <div class="offset-lg-1 col-12">
+                                    <h4>Company Details</h4>
+                                </div>  
+                                <div class="offset-lg-1 col-lg-5">
+                                    <div class="form-row">
+                                        <label for="">Company Name:*</label>
+                                        <input type="text" name="" id="">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="">Contact Name:*</label>
+                                        <input type="text" name="" id="">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="">Phone:*</label>
+                                        <input type="text" name="" id="">
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-lg-5">
+                                    <div class="form-row">
+                                        <label for="">E-mail:*</label>
+                                        <input type="text" name="" id="">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="">Account Payable contact:*</label>
+                                        <input type="text" name="" id="">
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="">Company Address:*</label>
+                                        <textarea class="border-all"></textarea>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="booking-details">
+                            <div class="row">  
+                                <div class="offset-lg-1 col-12">
+                                    <h4>Booking Details</h4>
+                                </div>  
+                                <div class="offset-lg-1 col-12">
+                                    <p>Studio:</p>
+                                    <div class="studio-id">
+                                        <div class="studio-id__item active">
+                                            <span>01</span>
+                                        </div>
+                                        <div class="studio-id__item">
+                                            <span>02</span>
+                                        </div>
+                                        <div class="studio-id__item">
+                                            <span>03</span>
+                                        </div>
+                                        <div class="studio-id__item">
+                                            <span>04</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-lg-5">
+                                    <div class="form-row">
+                                        <label for="">Catering requirements:</label>
+                                        <input class="border-all" type="text" name="" id="">
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-lg-5">
+                                    <div class="form-row lighting-req">
+                                        <label for="">Lighting requirements:</label>
+                                        <input class="border-all" type="text" name="" id="">
+                                        <p>Please note: All lighting hire to go through 
+                                            Gbox Studios
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-lg-5 ">
+                                    <div class="form-row --has-narrow">
+                                        <label for="">Booking Durations</label>
+                                        <input class="border-all" type="date" name="" id="">
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-lg-5 date-2">
+                                    <div class="form-row">
+                                        <label for="">&#12644</label>
+                                        <input class="border-all" type="date" name="" id="">
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-lg-11  col-md-12">
+                                    <div class="form-row">
+                                        <label for="">Project References</label>
+                                        <input class="border-all" type="text" name="" id="">
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-lg-11  col-md-12">
+                                    <div class="form-row">
+                                        <label for="">Where did you hear about us:</label>
+                                        <input class="border-all" type="text" name="" id="">
+                                    </div>
+                                </div>
+                                <div class="offset-lg-1 col-12">
+                                    <button type="submit" class="book-now">
+                                        <a href="">
+                                            <span>SUBMIT</span>
+                                        </a>
+                                        <p>By submitting this form I agree to 
+                                            <strong>GBox Studio</strong>’s Terms & Conditions.</p>
+                                    </button> 
+                                </div>
+                           </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 info">
+                    <div class="email">
+                        <p>Email</p>
+                        <p>Info@Goldenboxstudios.com</p>
+                    </div>
+                    <div class="tel">
+                        <p>Tel</p>
+                        <p>+84 979 872 809</p>
+                    </div>
+                    <div class="address">
+                        <p>Address</p>
+                        <p>04 Bau Cat District Tan Binh Ho Chi Minh City.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 contact">
+                    <h6>If you have any questions, comments or</h6>
+                    <h6>suggestions, feel free to email us or</h6>
+                    <form action="" method="" id="contact-form" class="row">
+                        <div class="col-6">
+                            <div>
+                                <label for="">Your Name</label>
+                                <input type="text" name="" id="name">
+                            </div>
+                            <div>
+                                <label for="">Phone</label>
+                                <input type="number" name="" id="phone">
+                            </div>
+                            <div>
+                                <label for="">Email</label>
+                                <input type="email" name="" id="email">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <label for="">Subject</label>
+                                <input type="text" name="" id="subject">
+                            </div>
+                            <div>
+                                <label for="">Message</label>
+                                <textarea rows="2"></textarea>
+                            </div>
+                            <div class="submit">
+                                <button type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer_inf">
+                <div class="btn-top">
+                    <img src="img/up-narrow.svg" alt="" class="svg">
+                </div>
+                <p>&copy; 2018 Gbox Studio, All rights Reserved </p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

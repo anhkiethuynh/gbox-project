@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Gbox</title>
+    <link rel="icon" href="./img/gbox.ico">
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css">
+    <link rel="stylesheet" href="dest/fonts.css">
+    <link rel="stylesheet" href="dest/stylelibs.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="container">
+                <a class="logo" href="index.html"><img src="./img/gbox.svg" alt="gbox" class="svg ">
+                    <h1>Gbox</h1>
+                </a>
+
+                <a class="fb" href="http://fb.com/kai3089">
+                    <img src="./img/fb-ic.svg" alt="facebook" class="svg">
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="menu">
+                <li class="menu__item"><a href="about.html">About</a></li>
+                <ul class="menu__item sub-menu">
+                    <li class="menu__item"><a href="studio.html">Studio</a></li>
+                    <li class="menu__item"><a href="rental.html">Rental</a></li>
+                    <li class="menu__item"><a href="cafe.html">Cafe</a></li>
+                    <li class="menu__item"><a href="work.html">Work</a></li>
+                </ul>
+                <li class="menu__item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <button class="btn-menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+    </header>
+    <main class="about-us">
+      <section>
+          <div class="container">
+            <div class="content">
+                <h2>Gbox studio</h2>
+                <p>
+                  GBOX STUDIOS aim is to create a full service offering clients the highest quality of work with a comprehensive understanding of modern production, our services include advertising, products, automotive, portraits, beauty, editorial photography and video production. Gbox brand mark was inspired by the brand name and the lens – a visual representation of our world, we aim to create powerful simplicity, all components are coherence based on a box. 
+                  Gbox is based in Ho Chi Minh City, one of the most beautiful city in Vietnam.
+                </p>
+            </div>
+            <div class="book-now">
+                <a href="">
+                    <span>Book</span>
+                    <span>now</span>
+                </a>
+                <p>If you want to booking studios</p>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 info">
+                    <div class="email">
+                        <p>Email</p>
+                        <p>Info@Goldenboxstudios.com</p>
+                    </div>
+                    <div class="tel">
+                        <p>Tel</p>
+                        <p>+84 979 872 809</p>
+                    </div>
+                    <div class="address">
+                        <p>Address</p>
+                        <p>04 Bau Cat District Tan Binh Ho Chi Minh City.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 contact">
+                    <h6>If you have any questions, comments or</h6>
+                    <h6>suggestions, feel free to email us or</h6>
+                    <form action="" method="" id="contact-form" class="row">
+                        <div class="col-6">
+                            <div>
+                                <label for="">Your Name</label>
+                                <input type="text" name="" id="name">
+                            </div>
+                            <div>
+                                <label for="">Phone</label>
+                                <input type="number" name="" id="phone">
+                            </div>
+                            <div>
+                                <label for="">Email</label>
+                                <input type="email" name="" id="email">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div>
+                                <label for="">Subject</label>
+                                <input type="text" name="" id="subject">
+                            </div>
+                            <div>
+                                <label for="">Message</label>
+                                <textarea rows="2"></textarea>
+                            </div>
+                            <div class="submit">
+                                <button type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer_inf">
+                <div class="btn-top">
+                    <img src="img/up-narrow.svg" alt="" class="svg">
+                </div>
+                <p>&copy; 2018 Gbox Studio, All rights Reserved </p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
