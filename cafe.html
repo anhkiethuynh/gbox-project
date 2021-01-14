@@ -20,10 +20,37 @@
     <link rel="stylesheet" href="dest/style.min.css">
     <link rel="stylesheet" href="dest/fonts.css">
     <link rel="stylesheet" href="dest/stylelibs.min.css">
+    <script src="js/libs/gsap.min.js"></script>
+    
 </head>
 
 <body>
     <header>
+        <div class="loader-container">
+            <div class="loader">
+                <div class="loader__content">
+                    <span>LOADING...</span>
+                </div>
+                <div class="loader__line"></div>
+            </div>
+            <script>
+                var tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+                tl
+                .to('.loader__line',
+                {
+                    scaleX: 0, 
+                    transformOrigin:"right",
+                    ease: "expo.out",
+                    duration: 2
+                })
+                .to('.loader__line',{
+                    scaleX: 1,
+                    transformOrigin: "left",
+                    ease: "expo.out",
+                    duration: 1.5
+                })
+            </script>
+        </div>
         <div class="top">
             <div class="container">
                 <a class="logo" href="index.html"><img src="./img/gbox.svg" alt="gbox" class="svg ">
@@ -68,28 +95,58 @@
             <div class="cafe-slider--wrap">
                 <div class="container">
                     <article>
-                        <div class="cafe-carousel">
-                            <div class="cafe-carousel__item">
-                                <div class="cafe-carousel__item-img --img1">
-                                    <img src="img/slider-1.jpg" alt="">
-                                </div>
-                                <div class="cafe-carousel__item-img --img2">
-                                    <img src="img/slider-2.jpg" alt="">
-                                </div>
-                                <div class="cafe-carousel__item-img --img3">
-                                    <img src="img/slider-3.jpg" alt="">
-                                </div>
-                                <div class="cafe-carousel__item-img --img4">
-                                    <img src="img/slider-4.jpg" alt="">
-                                </div>
+                        <div class="cafe-carousel" data-flickity='{ "watchCSS": true }'>
+                            <div class="cafe-carousel__item" itemscope data-spwp-uid="1">
+                                <figure class="cafe-carousel__item-img image --img1">
+                                    <a href="img/slider-1.jpg" data-size="718x571">
+                                        <img src="img/thumb-slider-1.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure class="cafe-carousel__item-img image --img2">
+                                    <a href="img/slider-2.jpg" data-size="756x425">
+                                        <img src="img/thumb-slider-2.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure class="cafe-carousel__item-img image --img3">
+                                    <a href="img/slider-3.jpg" data-size="374x250">
+                                        <img src="img/thumb-slider-3.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure class="cafe-carousel__item-img image --img4">
+                                    <a href="img/slider-4.jpg" data-size="516x251">
+                                        <img src="img/thumb-slider-4.jpg" alt="">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="cafe-carousel__item" itemscope data-spwp-uid="1">
+                                <figure class="cafe-carousel__item-img image --img1">
+                                    <a href="img/slider-1.jpg" data-size="718x571">
+                                        <img src="img/thumb-slider-1.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure class="cafe-carousel__item-img image --img2">
+                                    <a href="img/slider-2.jpg" data-size="756x425">
+                                        <img src="img/thumb-slider-2.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure class="cafe-carousel__item-img image --img3">
+                                    <a href="img/slider-3.jpg" data-size="374x250">
+                                        <img src="img/thumb-slider-3.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <figure class="cafe-carousel__item-img image --img4">
+                                    <a href="img/slider-4.jpg" data-size="516x251">
+                                        <img src="img/thumb-slider-4.jpg" alt="">
+                                    </a>
+                                </figure>
                             </div>
                         </div>
-                        <div class="full-screen">
+                        <!-- <div class="full-screen">
                             <div>
                                 <img src="/img/full-screen.svg" alt="" class="svg">
                             </div>
                             <span>Full Screen</span>
-                        </div>
+                        </div> -->
                     </article>
                     <div class="controller">
                         <div class="controller__prevNext">
@@ -174,8 +231,46 @@
             </div>
         </div>
     </footer>
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
     <script type="text/javascript" src="dest/jsmain.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+ 
 </body>
 
 </html>
