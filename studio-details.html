@@ -20,11 +20,81 @@
     <link rel="stylesheet" href="dest/style.min.css">
     <link rel="stylesheet" href="dest/fonts.css">
     <link rel="stylesheet" href="dest/stylelibs.min.css">
+    <style>
+        /* Font */
+        @font-face {
+            font-family: 'proSemi';
+            src: url('fonts/ProximaNova-Semibold.woff2') format('woff2'),
+                url('fonts/ProximaNova-Semibold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'proLight';
+            src: url('fonts/ProximaNova-Light.woff2') format('woff2'),
+                url('fonts/ProximaNova-Light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'proReg';
+            src: url('fonts/ProximaNova-Regular.woff2') format('woff2'),
+                url('fonts/ProximaNova-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'Ar';
+            src: url('fonts/ArialMT.woff2') format('woff2'),
+                url('fonts/ArialMT.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'din';
+            src: url('fonts/DINCondensed-Bold.woff2') format('woff2'),
+                url('fonts/DINCondensed-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'proB';
+            src: url('fonts/ProximaNova-Bold.woff2') format('woff2'),
+                url('fonts/ProximaNova-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'proExtra';
+            src: url('fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+                url('fonts/ProximaNova-Extrabld.woff') format('woff');
+            font-weight: 800;
+            font-style: normal;
+            font-display: fallback;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="loader">
-        <img src="img/loader.gif" alt="">
+    <div class="loader-container">
+        <div class="loader">
+            <div class="loader__content">
+                <span>LOADING...</span>
+            </div>
+            <div class="loader__line"></div>
+        </div>
     </div>
     <header>
         <div class="top">

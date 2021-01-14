@@ -21,6 +21,71 @@
     <link rel="stylesheet" href="dest/style.min.css">
     <link rel="stylesheet" href="dest/stylelibs.min.css">
     <script src="js/libs/gsap.min.js"></script>
+    <style>
+        /* Font */
+        @font-face {
+            font-family: 'proSemi';
+            src: url('fonts/ProximaNova-Semibold.woff2') format('woff2'),
+                url('fonts/ProximaNova-Semibold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'proLight';
+            src: url('fonts/ProximaNova-Light.woff2') format('woff2'),
+                url('fonts/ProximaNova-Light.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'proReg';
+            src: url('fonts/ProximaNova-Regular.woff2') format('woff2'),
+                url('fonts/ProximaNova-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'Ar';
+            src: url('fonts/ArialMT.woff2') format('woff2'),
+                url('fonts/ArialMT.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'din';
+            src: url('fonts/DINCondensed-Bold.woff2') format('woff2'),
+                url('fonts/DINCondensed-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'proB';
+            src: url('fonts/ProximaNova-Bold.woff2') format('woff2'),
+                url('fonts/ProximaNova-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-display: fallback;
+        }
+
+        @font-face {
+            font-family: 'proExtra';
+            src: url('fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+                url('fonts/ProximaNova-Extrabld.woff') format('woff');
+            font-weight: 800;
+            font-style: normal;
+            font-display: fallback;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,23 +96,6 @@
             </div>
             <div class="loader__line"></div>
         </div>
-        <script>
-            var tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
-            tl
-            .to('.loader__line',
-            {
-                scaleX: 0, 
-                transformOrigin:"right",
-                ease: "expo.out",
-                duration: 2
-            })
-            .to('.loader__line',{
-                scaleX: 1,
-                transformOrigin: "left",
-                ease: "expo.out",
-                duration: 1.5
-            })
-        </script>
     </div>
     <header>
         <div class="top">
@@ -85,7 +133,7 @@
             </svg>
         </button>
     </header>
-<main class="studio-page">
+    <main class="studio-page">
         <div class="container">
             <section class="row line">
                 <div class="col-md-6" data-aos="fade-down" data-aos-duration="1500">
@@ -209,7 +257,7 @@
                     </a>
                 </div>
             </section>
-        </div>  
+        </div>
     </main>
 
     <footer>

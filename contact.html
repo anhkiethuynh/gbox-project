@@ -87,7 +87,7 @@
     </style>
 </head>
 
-<body data-aos-easing="ease-in" data-aos-duration="1500" data-aos-delay="300">
+<body>
     <div class="loader-container">
         <div class="loader">
             <div class="loader__content">
@@ -120,126 +120,55 @@
                 <li class="menu__item"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <button class="btn-menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+        <button class="btn-menu"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+            aria-label="Main Menu">
             <svg width="100" height="100" viewBox="0 0 100 100">
-              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-              <path class="line line2" d="M 20,50 H 80" />
-              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                <path class="line line1"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
             </svg>
         </button>
     </header>
-    <main class="home-page">
-        <section class="text-box --center">
-            <div class="container">
-                <h3 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50"  data-aos-easing="ease-in-out">Welcome<br> to</h3>
-                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"  data-aos-easing="ease-in-out">gbox studios</h2>
-                <p class="des" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500"  data-aos-easing="ease-in-out"><strong>GBOX STUDIOS </strong>aim is to create a full service offering clients the
-                    highest quality of work with a comprehensive understanding of modern production, our services
-                    include advertising, products, automotive, portraits, beauty, editorial photography and video
-                    production. Gbox brand mark was inspired by the brand name and the lens – a visual representation of
-                    our world, we aim to create powerful simplicity, all components are coherence based on a box. Gbox
-                    is based in Ho Chi Minh City, one of the most beautiful city in Vietnam.</p>
-            </div>
-        </section>
-
-        <section class="project">
+    <main class="contact-page">
+        <section>
             <div class="container line">
-                <ul class="project__catg" data-aos="zoom-in" data-aos-duration="1500">
-                    <li class="active"><a href="">All</a></li>
-                    <li><a href="">Film</a></li>
-                    <li><a href="">Image</a></li>
-                </ul>
-                <div class="project__list d-flex justify-content-center">
-                    <a href="project-details.html" class="project__list-item card" data-aos="zoom-in" data-aos-duration="1500" >
-                        <div class="card__img">
-                            <img src="./img/project-01.jpg" alt="">
+                <div class="row justify-content-md-center">
+                    <div class="col-12 logo order">
+                        <img src="img/gbox-studios.svg" alt="" class="svg">
+                        <h1>Gbox Studio</h1>
+                    </div>
+                    <div class="col-md-6 order">
+                        <div class="address">
+                            <p>Address</p>
+                            <Address>04 bau cat district tan binh
+                                ho chi minh city.</Address>
                         </div>
-                        <div class="card__text">
-                            <h4>Project 1</h4>
-                            <p>Clients: Cif</p>
-                            <p>Photographer: <span>Eric huynh</span></p>
+                    </div>
+                    <div class="col-md-6 order">
+                        <div class="email">
+                            <p>Email</p>
+                            <p>Info@goldenboxstudios.com</p>
                         </div>
-                    </a>
-                    <a href="project-details.html" class="project__list-item card" data-aos="zoom-in" data-aos-duration="1500"">
-                        <div class="card__img">
-                            <img src="./img/all-4.jpg" alt="">
+                        <div class="tel">
+                            <p>tel <span>+84 979 872 809</span></p>
                         </div>
-                        <div class="card__text">
-                            <h4>Project 1</h4>
-                            <p>Clients: Cif</p>
-                            <p>Photographer: <span>Eric huynh</span></p>
-                        </div>
-                    </a>
-                    <a href="project-details.html" class="project__list-item card" data-aos="zoom-in" data-aos-duration="1500" >
-                        <div class="card__img">
-                            <img src="./img/all-2.jpg" alt="">
-                        </div>
-                        <div class="card__text">
-                            <h4>Project 1</h4>
-                            <p>Clients: Cif</p>
-                            <p>Photographer: <span>Eric huynh</span></p>
-                        </div>
-                    </a>
-                    <a href="project-details.html" class="project__list-item card" data-aos="zoom-in" data-aos-duration="1500" >
-                        <div class="card__img">
-                            <img src="./img/all-3.jpg" alt="">
-                        </div>
-                        <div class="card__text">
-                            <h4>Project 1</h4>
-                            <p>Clients: Cif</p>
-                            <p>Photographer: <span>Eric huynh</span></p>
-                        </div>
-                    </a>
-                    <a href="project-details.html" class="project__list-item card" data-aos="zoom-in" data-aos-duration="1500">
-                        <div class="card__img">
-                            <img src="./img/all-5.jpg" alt="">
-                        </div>
-                        <div class="card__text">
-                            <h4>Project 1</h4>
-                            <p>Clients: Cif</p>
-                            <p>Photographer: <span>Eric huynh</span></p>
-                        </div>
-                    </a>
-                    <a href="project-details.html" class="project__list-item card" data-aos="zoom-in" data-aos-duration="1500">
-                        <div class="card__img">
-                            <img src="./img/all-7.jpg" alt="">
-                        </div>
-                        <div class="card__text">
-                            <h4>Project 1</h4>
-                            <p>Clients: Cif</p>
-                            <p>Photographer: <span>Eric huynh</span></p>
-                        </div>
-                    </a>
+                    </div>
                 </div>
-                <a href="work.html" class="project__all" data-aos="fade-down" data-aos-duration="1500">
-                    <span>All works</span>
-                    <img src="img/down-narrow.svg" alt="" class="svg">
-                </a>
             </div>
         </section>
-
     </main>
 
-    <footer>
+    <footer class="contact-page--footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 info">
-                    <div class="email">
-                        <p>Email</p>
-                        <p>Info@Goldenboxstudios.com</p>
-                    </div>
-                    <div class="tel">
-                        <p>Tel</p>
-                        <p>+84 979 872 809</p>
-                    </div>
-                    <div class="address">
-                        <p>Address</p>
-                        <p>04 Bau Cat District Tan Binh Ho Chi Minh City.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 contact">
+                <div class="col-md-6">
                     <h6>If you have any questions, comments or</h6>
                     <h6>suggestions, feel free to email us or</h6>
+                </div>
+                <div class="col-md-6">
                     <form action="" method="" id="contact-form" class="row">
                         <div class="col-6">
                             <div>
@@ -281,11 +210,6 @@
     </footer>
     <script type="text/javascript" src="dest/jsmain.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script>
-        AOS.init({
-            once: true
-        });
-    </script>
 </body>
 
 </html>
